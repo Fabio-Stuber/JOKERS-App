@@ -5,7 +5,7 @@
 	"background_color": "#06101b",
 	"display": "standalone",
 	"scope": "/",
-	"start_url": "/",
+	"start_url": "https://www.jokers-pub.ch/",
 	"protocol_handlers": [{}],
 	"screenshots": [
 		{
@@ -19,9 +19,9 @@
 	"shortcuts": [
 		{
 			"name": "JOKERS WEBSEITE",
-			"short_name": "WEBSITE",
-			"url": "https://www.jokers-pub.ch/",
-			"description": "WEBSITE",
+			"short_name": "WEBSEITE",
+			"url": "/Website",
+			"description": "WEBSEITE",
 			"icons": [
 				{ "src": "icons/512x512.png", "sizes": "512x512", "type": "image/png" }
 			]
@@ -29,7 +29,7 @@
 		{
 			"name": "JOKERS KARTE",
 			"short_name": "KARTE",
-			"url": "https://karte.jokers-pub.ch/",
+			"url": "/karte",
 			"description": "KARTE",
 			"icons": [
 				{ "src": "icons/512x512.png", "sizes": "512x512", "type": "image/png" }
@@ -38,7 +38,7 @@
 		{
 			"name": "KONTAKT",
 			"short_name": "KONTAKT",
-			"url": "https://kontakt.jokers-pub.ch/",
+			"url": "/kontakt",
 			"description": "KONTAKT",
 			"icons": [
 				{ "src": "icons/512x512.png", "sizes": "512x512", "type": "image/png" }
