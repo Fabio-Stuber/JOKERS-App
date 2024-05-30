@@ -1,19 +1,8 @@
 <!DOCTYPE html>
 <html lang="de">
 	<head>
-		<style>
-			.body {
-				margin: 0;
-				padding: 0;
-				color: black;
-			}
-			#preview-frame {
-				height: 100%;
-				width: 100%;
-			}
-		</style>
-		<link rel="manifest" href="manifest.json" />
-		<script src="sw.js"></script>
+		<link rel="manifest" href="https://app.jokers-pub.ch/manifest.json" />
+		<script src="https://app.jokers-pub.ch/sw.js"></script>
 		<script>
 			if ("serviceWorker" in navigator) {
 				window.addEventListener("load", () => {
@@ -28,6 +17,15 @@
 				});
 			}
 		</script>
+		<script>
+			if (window.matchMedia("(display-mode: standalone)").matches) {
+				window.location.replace("https://www.jokers-pub.ch");
+			}
+		</script>
 	</head>
-	<body></body>
+	<body>
+		<div class="header">
+			<h1 class="headertext">JOKERS APP</h1>
+		</div>
+	</body>
 </html>
