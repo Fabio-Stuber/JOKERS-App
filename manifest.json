@@ -5,7 +5,7 @@
 	"background_color": "#06101b",
 	"display": "standalone",
 	"scope": "/",
-	"start_url": "https://www.jokers-pub.ch/",
+	"start_url": "/",
 	"protocol_handlers": [{}],
 	"screenshots": [
 		{
@@ -20,7 +20,7 @@
 		{
 			"name": "JOKERS WEBSEITE",
 			"short_name": "WEBSEITE",
-			"url": "/Website",
+			"url": "/website",
 			"description": "WEBSEITE",
 			"icons": [
 				{ "src": "icons/512x512.png", "sizes": "512x512", "type": "image/png" }
