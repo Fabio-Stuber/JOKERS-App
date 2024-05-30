@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<style>
+			.body {
+				margin: 0;
+				padding: 0;
+				color: black;
+			}
+			#preview-frame {
+				height: 100%;
+				width: 100%;
+			}
+		</style>
+		<link rel="manifest" href="manifest.json" />
+		<script src="sw.js"></script>
+		<script>
+			if ("serviceWorker" in navigator) {
+				window.addEventListener("load", () => {
+					navigator.serviceWorker
+						.register("service-worker.js")
+						.then(function (registration) {
+							console.log("ServiceWorker registered");
+						})
+						.catch(function (err) {
+							console.log("ServiceWorker error: ", err);
+						});
+				});
+			}
+		</script>
+	</head>
+	<body></body>
+</html>
