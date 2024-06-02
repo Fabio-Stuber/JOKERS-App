@@ -11,7 +11,7 @@ h1 {
     font-style: normal;
     color: #beac74;
     text-transform: uppercase;
-    font-size: 67px;
+    font-size: 40px;
     line-height: 92px;
     text-align: center;
 
@@ -97,7 +97,7 @@ a:hover {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 5px;
 }
 
 /* Change the color of links on hover */
