@@ -12,7 +12,6 @@ h1 {
     color: #beac74;
     text-transform: uppercase;
     font-size: 40px;
-    line-height: 92px;
     text-align: center;
 
 
@@ -49,7 +48,7 @@ label {
 }
 
 p,
-td {
+.table {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
