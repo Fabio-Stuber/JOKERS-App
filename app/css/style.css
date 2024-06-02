@@ -83,10 +83,13 @@ a:hover {
     position: fixed;
     bottom: 0;
     width: 100%;
+
 }
 
 /* Style the links inside the navigation bar */
 .navbar a {
+    border-top: 1px;
+    border-color: #958450;
     width: 20%;
     float: left;
     display: block;
@@ -94,7 +97,7 @@ a:hover {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 10px;
 }
 
 /* Change the color of links on hover */
