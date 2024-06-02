@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="CSS/w3.css" />
-		<link rel="stylesheet" href="CSS/style.css" />
-		<link rel="stylesheet" href="CSS/form.css" />
+		<link rel="stylesheet" href="css/w3.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/form.css" />
 
 		<link
 			rel="stylesheet"
@@ -14,20 +14,6 @@
 		<link rel="shortcut icon" href="icons/gr1@4x.png" type="image/x-icon" />
 		<script src="main.js"></script>
 		<link rel="manifest" href="manifest.json" />
-		<script>
-			if ("serviceWorker" in navigator) {
-				window.addEventListener("load", () => {
-					navigator.serviceWorker
-						.register("service-worker.js")
-						.then(function (registration) {
-							console.log("ServiceWorker registered");
-						})
-						.catch(function (err) {
-							console.log("ServiceWorker error: ", err);
-						});
-				});
-			}
-		</script>
 
 		<meta name="author" content="Fabio Stuber" />
 
