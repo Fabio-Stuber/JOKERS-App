@@ -1,11 +1,11 @@
 {
 	"short_name": "JOKERS",
-	"description": "Mitten im Zentrum von Herzogenbuchsee sind wir der Treffpunkt für Jung und Alt.\n\nUnser Ziel ist es, dass sich jeder Gast bei uns immer wohl und willkommen fühlt. Die gemütliche Atmosphäre im Pub und draussen in der Gartenlounge laden zum Verweilen ein. Wir bieten eine gute Mischung aus Cocktails, Bier und alkoholfreien Getränken.",
+	"description": "Mitten im Zentrum von Herzogenbuchsee sind wir der Treffpunkt für Jung und Alt.\nUnser Ziel ist es, dass sich jeder Gast bei uns immer wohl und willkommen fühlt. Die gemütliche Atmosphäre im Pub und draussen in der Gartenlounge laden zum Verweilen ein. Wir bieten eine gute Mischung aus Cocktails, Bier und alkoholfreien Getränken.",
 	"theme_color": "#06101b",
 	"background_color": "#06101b",
 	"display": "standalone",
-	"scope": "/app",
-	"start_url": "/app/index.html",
+	"scope": "/app/",
+	"start_url": "/app",
 	"protocol_handlers": [{}],
 	"screenshots": [
 		{
@@ -18,19 +18,10 @@
 	],
 	"shortcuts": [
 		{
-			"name": "JOKERS WEBSEITE",
-			"short_name": "WEBSEITE",
-			"url": "/app/Website",
-			"description": "WEBSEITE",
-			"icons": [
-				{ "src": "icons/512x512.png", "sizes": "512x512", "type": "image/png" }
-			]
-		},
-		{
-			"name": "JOKERS KARTE",
-			"short_name": "KARTE",
-			"url": "/app/karte",
-			"description": "KARTE",
+			"name": "RESERVATION",
+			"short_name": "RESERVATION",
+			"url": "/app/reservation",
+			"description": "RESERVATION",
 			"icons": [
 				{ "src": "icons/512x512.png", "sizes": "512x512", "type": "image/png" }
 			]
