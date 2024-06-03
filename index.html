@@ -22,9 +22,12 @@
 	<body>
 
 				<script>
-			if (window.matchMedia("(display-mode: standalone)").matches) {
-				window.location.replace("/app");
-			}
+			setInterval(() => {
+				if (window.matchMedia("(display-mode: standalone)").matches) {
+					window.location.replace("/app");
+				}
+			}, 200);
+
 		</script>
 		
 		<!-- Header -->
