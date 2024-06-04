@@ -124,7 +124,7 @@ a:hover {
 
 /* Add a color to the active/current link */
 .navbar a.active {
-    background-color: #beac74;
+    background-color: #0e263e;
     color: black;
 }
 
