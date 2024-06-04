@@ -127,3 +127,9 @@ a:hover {
     background-color: #beac74;
     color: black;
 }
+
+@media only screen and (max-width: 600px) {
+    .NO-MOBILE {
+        display: NONE;
+    }
+}

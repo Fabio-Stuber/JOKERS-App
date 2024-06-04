@@ -20,16 +20,28 @@
 		<title>JOKERS APP</title>
 	</head>
 	<body>
-
-				<script>
+		<script>
 			setInterval(() => {
 				if (window.matchMedia("(display-mode: standalone)").matches) {
 					window.location.replace("/app");
 				}
 			}, 200);
-
 		</script>
-		
+
+		<script>
+			setInterval(() => {
+				var isIOS =
+					/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+				if (isIOS) {
+					console.log("This is a IOS device");
+					document.getElementById("installButton").style.display = "none";
+				} else {
+					console.log("This is Not a IOS device");
+					document.getElementById("ios").style.display = "none";
+				}
+			}, 200);
+		</script>
+
 		<!-- Header -->
 		<div class="w3-padding-top-64"><!-- SPACE --></div>
 		<header
@@ -47,8 +59,13 @@
 				href=""
 				target="_blank"
 				class="w3-button w3-block w3-small w3-btn w3-padding">
-				APP INSTALIEREN
+				APP INSTALLIEREN
 			</button>
+
+			<p id="ios" class="w3-center">
+				App Installieren über: <span style="font-weight: bold">"TEILEN"</span> >
+				<span style="font-weight: bold">"ZUM STARTBILDSTIM HINZUFÜGEN"</span>
+			</p>
 		</div>
 
 		<div class="w3-padding-top-64"><!-- SPACE --></div>
