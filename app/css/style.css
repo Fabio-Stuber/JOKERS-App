@@ -119,7 +119,7 @@ a:hover {
 /* Change the color of links on hover */
 .navbar a:hover {
     background-color: #0e263e;
-    color: black;
+    color: white;
 }
 
 /* Add a color to the active/current link */
