@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>KONTAKT FORMULAR</title>
+		<title>APP | KONTAKT FORMULAR</title>
 		<link rel="shortcut icon" href="css/favicon.png" type="image/x-icon" />
 		<link rel="stylesheet" href="css/w3.css" />
 		<link rel="stylesheet" href="css/style.css" />
@@ -71,7 +71,10 @@
 
 		<div style="max-width: 1000px; margin: auto">
 			<div class="w3-container">
-				<form action="https://formsubmit.co/info@jokers-pub.ch" method="POST">
+				<form
+					action="https://formsubmit.co/info@jokers-pub.ch"
+					method="POST"
+					id="form">
 					<input
 						type="hidden"
 						name="_next"
@@ -145,8 +148,22 @@
 						<input type="submit" value="Einreichen" />
 					</div>
 				</form>
+				<div id="message">
+					<p>Vielen Dank für deine Anfrage. Wir melden uns bei dir.</p>
+					<input
+						type="submit"
+						value="Formular Schliessen"
+						onclick="window.location.href = 'https://app.jokers-pub.ch/app/kontakt'" />
+				</div>
 			</div>
 			<div class="w3-padding-64"></div>
 		</div>
+		<script>
+			document.getElementById("message").style.display = "none";
+			document.getElementById("form").onsubmit = function (e) {
+				document.getElementById("form").style.display = "none";
+				document.getElementById("message").style.display = "block";
+			};
+		</script>
 	</body>
 </html>
