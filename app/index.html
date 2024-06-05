@@ -14,7 +14,24 @@
 		<link rel="shortcut icon" href="icons/gr1@4x.png" type="image/x-icon" />
 		<meta name="author" content="Fabio Stuber" />
 
-		<title>JOKERS APP | APP</title>
+		<title>APP | JOKERS APP</title>
+
+		<script
+			src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js"
+			defer></script>
+		<script>
+			window.OneSignalDeferred = window.OneSignalDeferred || [];
+			OneSignalDeferred.push(function (OneSignal) {
+				OneSignal.init({
+					appId: "e47a7ed1-3ba4-4fb6-b202-6704d4bd646a",
+					safari_web_id:
+						"web.onesignal.auto.5462a642-4744-4944-be08-d03aa1430cc8",
+					notifyButton: {
+						enable: true,
+					},
+				});
+			});
+		</script>
 	</head>
 	<body>
 		<!-- Google tag (gtag.js) -->
@@ -130,8 +147,7 @@
 					class="w3-button w3-block w3-small w3-btn w3-padding">
 					SPIELPLAN ÖFFNEN
 				</a>
-								<div class="w3-padding-top-32 NO-MOBILE"><!-- SPACE --></div>
-
+				<div class="w3-padding-top-32 NO-MOBILE"><!-- SPACE --></div>
 			</div>
 			<div class="w3-half w3-container w3-padding-top-32">
 				<h2>KONTAKT</h2>
