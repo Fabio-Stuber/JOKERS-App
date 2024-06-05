@@ -47,7 +47,7 @@
 					/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 				if (isIOS) {
 					console.log("This is a IOS device");
-					document.getElementById("installButton").style.display = "none";
+					document.getElementById("android").style.display = "none";
 				} else {
 					console.log("This is Not a IOS device");
 					document.getElementById("ios").style.display = "none";
@@ -67,18 +67,44 @@
 		<div class="w3-padding-top-64"><!-- SPACE --></div>
 
 		<div class="w3-container" style="max-width: 1000px; margin: auto">
-			<button
-				id="installButton"
-				href=""
-				target="_blank"
-				class="w3-button w3-block w3-small w3-btn w3-padding">
-				APP INSTALLIEREN
-			</button>
+			<div id="android">
+				<button
+					id="installButton"
+					href=""
+					target="_blank"
+					class="w3-button w3-block w3-small w3-btn w3-padding">
+					APP INSTALLIEREN
+				</button>
+				<p class="w3-center">
+					App am besten direkt über den Browser &#x28;Chrome, Firefox, Chrome,
+					Edge, Opera, oder Samsung Internet&#x29; Installieren
+				</p>
+				<p class="w3-center">
+					<span style="font-weight: bold">WICHTIG: </span>Die Installation
+					funktioniert nicht über den Instagram Browser
+				</p>
 
-			<p id="ios" class="w3-center">
-				App Installieren über: <span style="font-weight: bold">"TEILEN"</span> >
-				<span style="font-weight: bold">"ZUM STARTBILDSCHIRM HINZUFÜGEN"</span>
-			</p>
+				<p class="w3-center">
+					<span style="font-weight: bold">Alternativ:</span> &#x28; &#x205D;
+					&#x29; Oben neben der Suchleiste anklicken > ZUM HOME-BILDSCHIRM
+					HINZUFÜGEN
+				</p>
+			</div>
+
+			<div id="ios">
+				<p class="w3-center">
+					App Installieren über:
+					<span style="font-weight: bold">"TEILEN"</span> >
+					<span style="font-weight: bold"
+						>"ZUM HOME-BILDSCHIRM HINZUFÜGEN"</span
+					>
+				</p>
+
+				<p class="w3-center">
+					<span style="font-weight: bold">WICHTIG: </span>Die Installation
+					funktioniert nicht über den Instagram Browser
+				</p>
+			</div>
 		</div>
 
 		<div class="w3-padding-top-64"><!-- SPACE --></div>
